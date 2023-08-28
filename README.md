@@ -15,6 +15,6 @@ Testing the installation of SQL Server on Ubuntu, and onboarding the server to A
   - The script successfully connected to `aka.ms` on port 443, and after resolving the location of a bash script, it was downloaded to `/root/install_linux_azcmagent.sh`. This new script is also run, which actually installs the agent.
   - The article I was following asked to manually run `install_linux_azcmagent.sh` but as mentioned above, the original installation script includes a line for running it, so there's no need to do that again. Furthermore, in the article, there is a typo: the first letter in the name should not be uppercase.
   - If you're using a proxy server, then you actually need to run a slightly different version of the command, as mentioned in the article.
-  - That script is automatically run, so running it manually or changing the script wasn't necessary, at least when not using a proxy. The article has an alternate command for use with a proxy.
-  - The installation process of the azcmagent tries to do an IP port checking, but `netstat` was not installed on the machine, so that was skipped.
-  - After running the last command which actually connects the agent to Azure, you have open a browser session at `https://microsoft.com/devicelogin` and enter a code to authenticate.
+  - The installation process of the azcmagent tries to do an IP port check, but `netstat` was not installed on the machine, so that was skipped. On a server behind a firewall, that check might be useful, or running a similar check manually.
+  - After running the last command which actually connects the agent to Azure, you have open a browser session at `https://microsoft.com/devicelogin` and enter a code to authenticate. I performed the authentication on a different laptop.
+  - After authenticating, the agent proceeded to creating the connection / resource in Azure.
