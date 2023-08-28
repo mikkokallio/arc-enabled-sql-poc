@@ -29,3 +29,6 @@ Testing the installation of SQL Server on Ubuntu, and onboarding the server to A
 * Realizing the region may have been the problem, I proceeded to remove the agent using this: https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-agent?tabs=windows
 * Then I gave it another try, putting everything in West Europe.
   - This time I also granted right for Automanage to do stuff.
+  - First attempt to connect agent to Azure failed with 403. Failed to Get MSI Certificate from HIS.
+  - Second attempt was really quick and succeeded. The resource appeared in Azure after a few minutes.
+- SQL Server didn't show up at the same time, but in Extensions, I can see it's being created. SQL Server Configuration doesn't yet show any of the three options chosen. `ps aux` on the Ubuntu machine shows the extension running as a process.
