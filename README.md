@@ -28,3 +28,4 @@ Testing the installation of SQL Server on Ubuntu, and onboarding the server to A
   - Region may be a problem: I discovered in docs that Arc-enabled SQL Server is not available in Sweden Central.
 * Realizing the region may have been the problem, I proceeded to remove the agent using this: https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-agent?tabs=windows
 * Then I gave it another try, putting everything in West Europe.
+  - This time I also granted right for Automanage to do stuff.
