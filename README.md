@@ -25,4 +25,6 @@ Testing the installation of SQL Server on Ubuntu, and onboarding the server to A
   - It gives three options, "PAYG", "Paid", and "LicenseOnly". I chose "PAYG" in accordance with my earlier choice.
   - That selection appears to also change the selection on the SQL Server Configuration blade of the server. The page shows the same three options.
   - The deployment took a really long time... or rather didn't finish.
-  - Region may be a problem: Arc-enabled SQL Server is not available in Sweden Central.
+  - Region may be a problem: I discovered in docs that Arc-enabled SQL Server is not available in Sweden Central.
+* Realizing the region may have been the problem, I proceeded to remove the agent using this: https://learn.microsoft.com/en-us/azure/azure-arc/servers/manage-agent?tabs=windows
+* Then I gave it another try, putting everything in West Europe.
