@@ -18,5 +18,10 @@ Testing the installation of SQL Server on Ubuntu, and onboarding the server to A
   - The installation process of the azcmagent tries to do an IP port check, but `netstat` was not installed on the machine, so that was skipped. On a server behind a firewall, that check might be useful, or running a similar check manually.
   - After running the last command which actually connects the agent to Azure, you have open a browser session at `https://microsoft.com/devicelogin` and enter a code to authenticate. I performed the authentication on a different laptop.
   - After authenticating, the agent proceeded to creating the connection / resource in Azure.
-* In Azure, the Ubuntu laptop now showed up as a resource. The SQL Server did not despite waiting a long time.
+* In Azure, the Ubuntu laptop now showed up as a resource. The SQL Server did not despite waiting more than an hour. Obviously the automatic deployment didn't get triggered for some reason.
 * I then tried logging into the SQL Server with `sqlcmd -S localhost -U sa` but after providing the password, I got an error about certificate verify having failed. This was fixed by adding `-C` to the command. The article also mentions `-No` as a way around it.
+  - Just as a test, I created a db, table, and a few rows of data. Everything seemed to work fine.
+* Back in Azure, I wiewed the Arc-enabled laptop's extensions and from there, started installing the SQL extension.
+  - It gives three options, "PAYG", "Paid", and "LicenseOnly". I chose "PAYG" in accordance with my earlier choice.
+  - That selection appears to also change the selection on the SQL Server Configuration blade of the server. The page shows the same three options.
+  - The deployment took a really long time.
