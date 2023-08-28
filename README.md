@@ -24,4 +24,5 @@ Testing the installation of SQL Server on Ubuntu, and onboarding the server to A
 * Back in Azure, I wiewed the Arc-enabled laptop's extensions and from there, started installing the SQL extension.
   - It gives three options, "PAYG", "Paid", and "LicenseOnly". I chose "PAYG" in accordance with my earlier choice.
   - That selection appears to also change the selection on the SQL Server Configuration blade of the server. The page shows the same three options.
-  - The deployment took a really long time.
+  - The deployment took a really long time... or rather didn't finish.
+  - Region may be a problem: Arc-enabled SQL Server is not available in Sweden Central.
