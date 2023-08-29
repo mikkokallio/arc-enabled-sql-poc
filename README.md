@@ -32,3 +32,6 @@ Testing the installation of SQL Server on Ubuntu, and onboarding the server to A
   - First attempt to connect agent to Azure failed with 403. Failed to Get MSI Certificate from HIS.
   - Second attempt was really quick and succeeded. The resource appeared in Azure after a few minutes.
 - SQL Server didn't show up at the same time, but in Extensions, I can see it's being created. SQL Server Configuration doesn't yet show any of the three options chosen. `ps aux` on the Ubuntu machine shows the extension running as a process.
+  - I left it running overnight, and in the morning I noticed two extensions had failed: MDE.Linux, i.e. Microsoft Defender for Endpoint and the SQL extension.
+  - MDE agent installation had timed out.
+  - SQL agent logs said the Arc Connected Machine agent wasn't healthy. The reason could be that the laptop fell asleep during the really long installation. I'll retry manually.
