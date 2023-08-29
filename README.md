@@ -36,3 +36,4 @@ Testing the installation of SQL Server on Ubuntu, and onboarding the server to A
   - MDE agent installation had timed out.
   - SQL agent logs said the Arc Connected Machine agent wasn't healthy. The reason could be that the laptop fell asleep during the really long installation. I'll retry manually if the extension wasn't installed successfully.
   - The SQL Server now actually shows in the Ubuntu laptop's SQL Server Instances. The Licence Type selection hasn't automatically been switched to PAYG although the SQL Server's properties show PAYG. Not sure if it's fully connected to Azure billing yet.
+  - At least so far, I couldn't see any charges in Cost Analysis. I switched on the PAYG selection to see what happens.
