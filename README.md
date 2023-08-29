@@ -35,4 +35,4 @@ Testing the installation of SQL Server on Ubuntu, and onboarding the server to A
   - I left it running overnight, and in the morning I noticed two extensions had failed: MDE.Linux, i.e. Microsoft Defender for Endpoint and the SQL extension.
   - MDE agent installation had timed out.
   - SQL agent logs said the Arc Connected Machine agent wasn't healthy. The reason could be that the laptop fell asleep during the really long installation. I'll retry manually if the extension wasn't installed successfully.
-  - The SQL Server now actually shows in the Ubuntu laptop's SQL Server Instances.
+  - The SQL Server now actually shows in the Ubuntu laptop's SQL Server Instances. The Licence Type selection hasn't automatically been switched to PAYG although the SQL Server's properties show PAYG. Not sure if it's fully connected to Azure billing yet.
