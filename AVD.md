@@ -43,3 +43,5 @@ So I got this: Success authenticating to Azure Active Directory. Valid domain ad
 So trying to fix that now.
 
 10. Went and added the user to AAD DC Administrators and VM Users. Deploying once more!
+
+That actually worked.. but this time the problem is the Azure admin instead. So doing similar tricks.
