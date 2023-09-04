@@ -41,3 +41,5 @@ Well, failed again. This time password was expired (probably because it was temp
 So I got this: Success authenticating to Azure Active Directory. Valid domain administrator credentials. Validate if the given domain administrator xxx is a member of 'AAD DC Administrators' group. "Error: The given domain administrator xxx is not a member of 'AAD DC Administrators' group."
 
 So trying to fix that now.
+
+10. Went and added the user to AAD DC Administrators and VM Users. Deploying once more!
