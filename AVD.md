@@ -16,4 +16,8 @@ This resulted in an error in the deployment of `easy-button-inputvalidation-job-
 
 2. This time trying to create AAD DS first so that it's clear what domain name you'll have. Otherwise, it's the same subscription, North Europe, etc. Failed because Standard Edition doesn't support cloud-only sync.
 
-3. Trying again with sync type as All, keeping Standard SKU.
+3. Trying again with sync type as All, keeping Standard SKU. Provisioning takes a long time but so far looks like it worked this time.
+
+4. Provisioned a vnet for host pool. Peered it with the AAD DS vnet.
+
+5. 
