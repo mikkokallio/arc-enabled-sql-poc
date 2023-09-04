@@ -31,3 +31,5 @@ But again, I got "The resource write operation failed to complete successfully, 
 Following the advice there, I went to the `inputValidationRunbook` and viewed the output of the failed job there: "Validating domain administrator credentials. Failed to connect to Azure Active Directory. Incorrect domain administrator username or password. One or more errors occurred.: Sequence contains no elements"
 
 So, I'll have to check the domain admin credentials.
+
+8. Created a new user in tenant. Now using that user as domain admin, and also assigning that user to AVD (if that's even necessary?)
