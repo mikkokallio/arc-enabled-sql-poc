@@ -25,3 +25,5 @@ This resulted in an error in the deployment of `easy-button-inputvalidation-job-
 But again, I got "The resource write operation failed to complete successfully, because it reached terminal provisioning state 'Failed'."
 
 6. Meanwhile, in the AAD DS, the service had started running, but is now suggesting runnning diagnostics, which revealed "DNS server settings for managed domain service IPs 10.0.0.4,10.0.0.5 need to be configured for virtual networks". Clicking "Fix".
+
+7. Looks like someone else has had the same problem with AVD deployment: https://learn.microsoft.com/en-us/answers/questions/1323698/cannot-create-a-azure-virtual-desktop
