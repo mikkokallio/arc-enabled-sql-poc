@@ -13,3 +13,7 @@ I started a PoC in my own environment.
 This resulted in an error in the deployment of `easy-button-inputvalidation-job-linked-template`.
 
 "{"code":"DeploymentFailed","message":"At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-deployment-operations for usage details.","details":[{"code":"Conflict","message":"{\r\n  \"status\": \"Failed\",\r\n  \"error\": {\r\n    \"code\": \"ResourceDeploymentFailure\",\r\n    \"message\": \"The resource write operation failed to complete successfully, because it reached terminal provisioning state 'Failed'.\"\r\n  }\r\n}"}]}"
+
+2. This time trying to create AAD DS first so that it's clear what domain name you'll have. Otherwise, it's the same subscription, North Europe, etc. Failed because Standard Edition doesn't support cloud-only sync.
+
+3. Trying again with sync type as All, keeping Standard SKU.
