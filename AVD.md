@@ -24,6 +24,10 @@ This resulted in an error in the deployment of `easy-button-inputvalidation-job-
 
 But again, I got "The resource write operation failed to complete successfully, because it reached terminal provisioning state 'Failed'."
 
-6. Meanwhile, in the AAD DS, the service had started running, but is now suggesting runnning diagnostics, which revealed "DNS server settings for managed domain service IPs 10.0.0.4,10.0.0.5 need to be configured for virtual networks". Clicking "Fix".
+6. Meanwhile, in the AAD DS, the service had started running, but is now suggesting runnning diagnostics, which revealed "DNS server settings for managed domain service IPs 10.0.0.4,10.0.0.5 need to be configured for virtual networks". Clicking "Fix". That worked fine.
 
-7. Looks like someone else has had the same problem with AVD deployment: https://learn.microsoft.com/en-us/answers/questions/1323698/cannot-create-a-azure-virtual-desktop
+7. Back to troubleshooting the AVD deployment. Looks like someone else has had the same problem with AVD deployment: https://learn.microsoft.com/en-us/answers/questions/1323698/cannot-create-a-azure-virtual-desktop
+
+Following the advice there, I went to the `inputValidationRunbook` and viewed the output of the failed job there: "Validating domain administrator credentials. Failed to connect to Azure Active Directory. Incorrect domain administrator username or password. One or more errors occurred.: Sequence contains no elements"
+
+So, I'll have to check the domain admin credentials.
