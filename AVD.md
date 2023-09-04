@@ -38,10 +38,6 @@ Well, failed again. This time password was expired (probably because it was temp
 
 9. So logged in as that user and changed it. Now trying again to deploy with that new pw.
 
-Success authenticating to Azure Active Directory. Valid domain administrator credentials.
-
-Validate if the given domain administrator avddude@mikkomkalliogmailcom.onmicrosoft.com is a member of 'AAD DC Administrators' group.
-
-So I got this: "Error: The given domain administrator avddude@mikkomkalliogmailcom.onmicrosoft.com is not a member of 'AAD DC Administrators' group."
+So I got this: Success authenticating to Azure Active Directory. Valid domain administrator credentials. Validate if the given domain administrator xxx is a member of 'AAD DC Administrators' group. "Error: The given domain administrator xxx is not a member of 'AAD DC Administrators' group."
 
 So trying to fix that now.
