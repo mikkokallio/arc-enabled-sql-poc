@@ -33,3 +33,7 @@ Following the advice there, I went to the `inputValidationRunbook` and viewed th
 So, I'll have to check the domain admin credentials.
 
 8. Created a new user in tenant. Now using that user as domain admin, and also assigning that user to AVD (if that's even necessary?)
+
+Well, failed again. This time password was expired (probably because it was temp pw that the user should change).
+
+9. So logged in as that user and changed it. Now trying again to deploy with that new pw.
