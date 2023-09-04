@@ -21,3 +21,5 @@ This resulted in an error in the deployment of `easy-button-inputvalidation-job-
 4. Provisioned a vnet for host pool. Peered it with the AAD DS vnet.
 
 5. With these in place, I'm now trying to deploy the "Getting Started" AVD deployment again. I chose not to create a test user as part of the wizard, to keep the number of moving parts to the minimum. I'll create it afterwards.
+
+But again, I got "The resource write operation failed to complete successfully, because it reached terminal provisioning state 'Failed'."
